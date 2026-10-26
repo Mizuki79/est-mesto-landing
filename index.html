@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6b5cc">
+  <title>Есть место — после пар в город</title>
+  <meta name="description" content="Театр, выставки и музыка для студентов Москвы. Находи культурные события и подавай заявку на свободное место в Telegram-боте «Есть место».">
+  <meta property="og:title" content="Есть место — после пар в город">
+  <meta property="og:description" content="Твой следующий культурный вечер начинается здесь. Театр, выставки и музыка для студентов Москвы.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://Mizuki79.github.io/est-mesto-landing/theatre.webp">
+  <meta property="og:url" content="https://Mizuki79.github.io/est-mesto-landing/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="theatre.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Есть место, на главную">есть место<span class="brand-mark" aria-hidden="true">↗</span></a>
+    <nav aria-label="Главная навигация" id="navigation">
+      <a href="#events">Куда пойти</a><a href="#how">Как это работает</a><a href="#about">О проекте</a>
+    </nav>
+    <a class="header-cta" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">В Telegram <img src="arrow-up-right.svg" alt="" width="20" height="20"></a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="theatre.webp" alt="Ряды бархатных кресел в театре. Одно розовое место среди красных и зелёных." width="1586" height="992" fetchpriority="high">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> Культурный проект для студентов · Москва</p>
+        <h1 id="hero-title">ЕСТЬ<br>МЕСТО<span class="title-dot">.</span></h1>
+        <div class="hero-bottom"><div><p class="hero-tagline">После пар — в город.</p><p class="hero-description">В театр, на выставку, на концерт.<br>Новые впечатления ближе, чем кажется.</p></div>
+          <a class="button button-lime" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">Найти своё место <img src="arrow-up-right.svg" alt="" width="25" height="25"></a>
+        </div>
+      </div>
+      <div class="seat-note" aria-hidden="true"><span>Это место<br>может стать твоим</span><span class="note-arrow">↙</span></div>
+      <a class="hero-down" href="#events" aria-label="Посмотреть направления">Листай к впечатлениям <span aria-hidden="true">↓</span></a>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>МЕНЬШЕ «КАК-НИБУДЬ ПОТОМ»</span><span>↗</span><span>БОЛЬШЕ «Я ИДУ»</span><span>↗</span><span>ПОСЛЕ ПАР — В ГОРОД</span><span>↗</span></div>
+    <section class="events section" id="events" aria-labelledby="events-title">
+      <div class="section-top"><p class="eyebrow">01 / Куда пойти</p><p class="section-aside">Сменить аудиторию<br>на зрительный зал</p></div>
+      <h2 id="events-title">А ЧТО ПОСЛЕ ПАР?</h2>
+      <div class="events-toolbar"><p>Выбирай не привычное. Выбирай интересное.</p><div class="filters" role="group" aria-label="Направления событий"><button class="filter active" aria-pressed="true" data-filter="all">Всё</button><button class="filter" aria-pressed="false" data-filter="theatre">Театр</button><button class="filter" aria-pressed="false" data-filter="art">Выставки</button><button class="filter" aria-pressed="false" data-filter="music">Музыка</button></div></div>
+      <div class="event-grid" aria-live="polite">
+        <article class="event" data-category="theatre"><button class="event-open" data-event="theatre" aria-label="Театр: узнать больше"><div class="event-image"><img src="theatre.webp" alt="Бархатные кресла театрального зала" width="700" height="850" loading="lazy"><span class="category">ТЕАТР</span><span class="round-arrow" aria-hidden="true"><img src="arrow-up-right.svg" alt="" width="25" height="25"></span></div><div class="event-caption"><span class="event-number">01</span><h3>Вечер с другим<br>сценарием</h3></div><p>Свет гаснет. История начинается.</p></button></article>
+        <article class="event" data-category="art"><button class="event-open" data-event="art" aria-label="Выставки: узнать больше"><div class="event-image"><img src="gallery.webp" alt="Посетители перед абстрактными картинами в галерее" width="700" height="850" loading="lazy"><span class="category">ВЫСТАВКИ</span><span class="round-arrow" aria-hidden="true"><img src="arrow-up-right.svg" alt="" width="25" height="25"></span></div><div class="event-caption"><span class="event-number">02</span><h3>Посмотреть<br>по-новому</h3></div><p>Искусство, с которым есть о чём поспорить.</p></button></article>
+        <article class="event" data-category="music"><button class="event-open" data-event="music" aria-label="Музыка: узнать больше"><div class="event-image"><img src="music.webp" alt="Виолончель и пюпитры на сцене камерного зала" width="700" height="850" loading="lazy"><span class="category">МУЗЫКА</span><span class="round-arrow" aria-hidden="true"><img src="arrow-up-right.svg" alt="" width="25" height="25"></span></div><div class="event-caption"><span class="event-number">03</span><h3>Услышать<br>вживую</h3></div><p>На вечер выключить наушники.</p></button></article>
+      </div>
+      <div class="more-events"><div><h3>Больше событий — в боте.</h3><p>Познакомимся, чтобы найти твоё следующее впечатление.</p></div><a class="button button-dark" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">Присоединиться <img src="arrow-up-right.svg" alt="" width="24" height="24"></a></div>
+      <p class="availability">Здесь — направления проекта. Актуальные события, даты и условия участия смотри в Telegram.</p>
+    </section>
+    <section class="how section" id="how" aria-labelledby="how-title">
+      <div class="section-top"><p class="eyebrow">02 / Как это работает</p><p class="section-aside">От «хочу пойти»<br>до «я на месте»</p></div>
+      <h2 id="how-title">НЕ СЛОЖНЕЕ,<br>ЧЕМ НАПИСАТЬ ДРУГУ.</h2>
+      <div class="steps"><article><span class="step-number">01<span aria-hidden="true">↗</span></span><h3>Загляни в афишу</h3><p>Открой бота и посмотри, какие культурные события есть в проекте.</p></article><article><span class="step-number">02<span aria-hidden="true">↗</span></span><h3>Давай знакомиться</h3><p>Заполни короткий профиль студента и отметь интересы. Номер курса не нужен.</p></article><article><span class="step-number">03<span aria-hidden="true">↗</span></span><h3>Подай заявку</h3><p>Выбери событие и дождись результата в боте. Если место твоё — там же придёт билет.</p></article></div>
+      <div class="how-note"><span aria-hidden="true">*</span><p>Заявка ещё не означает билет. Если желающих больше, чем мест, бот распределяет места случайным образом. Все детали участия — в карточке события.</p></div>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title"><div class="about-photo"><img src="theatre.webp" alt="Свободное розовое кресло в театре" width="793" height="992" loading="lazy"><span class="photo-label">МЕСТО ДЛЯ НОВОГО ОПЫТА</span></div><div class="about-copy"><p class="eyebrow">03 / О проекте</p><h2 id="about-title">ГОРОД БОЛЬШЕ,<br>ЧЕМ МАРШРУТ<br>ДОМ — ВУЗ.</h2><p class="about-lead">И в нём есть место тебе.</p><p>«Есть место» знакомит студентов с культурной жизнью Москвы. Помогаем сделать первый шаг в театр, галерею или концертный зал — даже если раньше казалось, что это «не для меня».</p><p>Не обязательно разбираться в режиссёрах, знать все стили или заранее понимать искусство. Достаточно любопытства.</p><a class="text-link" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">Начать с одного вечера <img src="arrow-up-right.svg" alt="" width="25" height="25"></a></div></section>
+    <section class="faq section" id="questions" aria-labelledby="faq-title"><div><p class="eyebrow">04 / Без неловких вопросов</p><h2 id="faq-title">ЕСТЬ<br>ВОПРОС?</h2></div><div class="faq-list">
+      <details><summary>Для кого этот проект?<span aria-hidden="true">+</span></summary><p>Для студентов, которым хочется познакомиться с культурной жизнью Москвы. При регистрации бот спросит имя, вуз и интересы. Условия конкретного события указаны в его карточке.</p></details>
+      <details><summary>Это бесплатно?<span aria-hidden="true">+</span></summary><p>Проект помогает студентам получать свободные места на культурные события. Стоимость и условия участия нужно проверять в карточке события в боте до подачи заявки.</p></details>
+      <details><summary>Нужно сразу регистрироваться?<span aria-hidden="true">+</span></summary><p>Сначала можно познакомиться с проектом и посмотреть события. Для подачи заявки понадобится короткий профиль: так билет будет связан с конкретным участником.</p></details>
+      <details><summary>Где искать свой билет?<span aria-hidden="true">+</span></summary><p>Результат заявки и билет приходят в Telegram-боте. Проверяй сообщения и раздел с заявками; перед походом прочитай условия посещения в карточке события.</p></details>
+      <details><summary>А если планы изменились?<span aria-hidden="true">+</span></summary><p>Отмени участие в разделе заявок в боте, как только поймёшь, что не придёшь. Так освободившееся место сможет достаться другому студенту.</p></details>
+    </div></section>
+    <section class="join section" aria-labelledby="join-title"><div class="section-top"><p class="eyebrow">Твой вечер ещё не занят</p><span class="join-star" aria-hidden="true">✳</span></div><h2 id="join-title">УВИДИМСЯ<br>НЕ НА ПАРЕ.</h2><div class="join-bottom"><p>А в зале, где начинается что-то новое.</p><a class="button button-dark" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">Открыть Telegram-бота <img src="arrow-up-right.svg" alt="" width="25" height="25"></a></div></section>
+  </main>
+  <footer><a class="brand" href="#">есть место<span class="brand-mark" aria-hidden="true">↗</span></a><p>Культурный проект для студентов Москвы</p><a href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">@est_mesto_msk_bot</a><button class="privacy-open">О данных</button></footer>
+  <dialog id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Закрыть окно">×</button><p class="eyebrow" id="dialog-eyebrow">Куда пойти</p><h2 id="dialog-title"></h2><p id="dialog-copy"></p><p class="dialog-note">Конкретные события, свободные места и условия участия доступны в Telegram-боте.</p><a class="button button-dark" href="https://t.me/est_mesto_msk_bot" target="_blank" rel="noopener noreferrer">Посмотреть в боте <img src="arrow-up-right.svg" alt="" width="24" height="24"></a></dialog>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><button class="dialog-close" aria-label="Закрыть окно">×</button><p class="eyebrow">О данных</p><h2 id="privacy-title">Без лишних форм.</h2><p>Этот сайт не запрашивает имя, телефон или данные студенческого билета. Регистрация и заявки оформляются в Telegram-боте.</p><p>Сайт размещён на GitHub Pages. Провайдер хостинга может обрабатывать технические данные по своей политике конфиденциальности. Счётчики рекламной аналитики на сайте не подключены.</p><a class="text-link" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Политика GitHub <img src="arrow-up-right.svg" alt="" width="24" height="24"></a></dialog>
+</body>
+</html>
